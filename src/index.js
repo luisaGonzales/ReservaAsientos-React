@@ -106,7 +106,57 @@ const App = ({arr}) =>{
                     </div>
                 </div>
             </section>
-            
+            <section id="busqueda">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <h1 className="text3">Búsqueda de Pasajeros</h1>
+                        </div>
+                    </div>
+                    <div className="form-horizontal">
+                        <div className="form-group">
+                            <label className="control-label col-sm-2" for="">DNI:</label>
+                            <div className="col-sm-8">
+                                <input type="number" className="form-control" id="buscarDNI" placeholder="Ingrese el DNI"/>
+                            </div>
+                        </div>
+                        <div className="row text-center">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <p><a className="btn btn-primary pull-right" href="#" role="button" id="btnBuscarDNI"><i className="fa fa-search"></i> Buscar</a></p>
+                                </div>
+                                <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <p><a className="btn btn-primary pull-left" href="#" role="button" id="btnVolverBuscar"><i className="fa fa-hand-o-up" aria-hidden="true"></i> Menú Principal</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row text-center">
+                            <div className="col-md-offset-3 col-md-6 col-md-offset-3">
+                                <div id="dniEncontrado">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="imprimirLista" className="no-display">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <h1 className="text3">Lista de Pasajeros</h1>
+                        </div>
+                    </div>
+                    <div className="row text-center">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <p><a className="btn btn-primary" href="#" role="button" id="btnVolverListar"><i className="fa fa-hand-o-up" aria-hidden="true"></i> Menú Principal</a></p>
+                        </div>
+                    </div>
+                    <div id="listado">
+
+                    </div>
+
+                </div>
+            </section>
                 <div>
                     <h1 className="text4">Lista de Pasajeros Registrados</h1>
                     <ul>
