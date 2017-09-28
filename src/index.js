@@ -8,11 +8,11 @@ const App = ({arr}) =>{
     return (
         <div>
             <section id="bienvenida">
-                <div class="container description">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            <p class="text2">RESERVA DE ASIENTOS</p>
-                            <p><a class="btn btn-primary" role="button" id="ingresar"><i class="fa fa-sign-in" aria-hidden="true"></i> INGRESAR</a></p>
+                <div className="container description">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <p className="text2">RESERVA DE ASIENTOS</p>
+                            <p><a className="btn btn-primary" role="button" id="ingresar"><i className="fa fa-sign-in" aria-hidden="true"></i> INGRESAR</a></p>
                         </div>
                     </div>
                 </div>
@@ -40,25 +40,62 @@ const App = ({arr}) =>{
                     </div>
                 </div>
             </section>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                        <h1 className="text3">Asientos</h1>
-            </div>
-            <table id="tablaPasajeros">
-                 <tr>
-                    <td id="1" className="btn btn-default">1</td>
-                    <td id="3" className="btn btn-default reservado">3</td>
-                    <td id="5" className="btn btn-default">5</td>
-                    <td id="7" className="btn btn-default">7</td>
-                    <td id="9" className="btn btn-default reservado">9</td>
-                </tr>
-                <tr>
-                    <td id="2" className="btn btn-default reservado">2</td>
-                    <td id="4" className="btn btn-default">4</td>
-                    <td id="6" className="btn btn-default reservado">6</td>
-                    <td id="8" className="btn btn-default reservado">8</td>
-                    <td id="10" className="btn btn-default">10</td>
-                </tr>
-            </table>
+            <section id="reservarAsiento" className="no-display">
+                <div className="container">
+                    <div className="row" id="tituloReservar">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <h1 className="text3">Selecciona un Asiento</h1>
+                        </div>
+                    </div>
+                    <div className="row text-center">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <table id="tablaPasajeros">
+                                <tr>
+                                    <td id="1" className="btn btn-default">1</td>
+                                    <td id="3" className="btn btn-default reservado">3</td>
+                                    <td id="5" className="btn btn-default">5</td>
+                                    <td id="7" className="btn btn-default">7</td>
+                                    <td id="9" className="btn btn-default reservado">9</td>
+                                </tr>
+                                <tr>
+                                    <td id="2" className="btn btn-default reservado">2</td>
+                                    <td id="4" className="btn btn-default">4</td>
+                                    <td id="6" className="btn btn-default reservado">6</td>
+                                    <td id="8" className="btn btn-default reservado">8</td>
+                                    <td id="10" className="btn btn-default">10</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div className="form-horizontal">
+                        <div className="form-group">
+                            <label className="control-label col-sm-2" for="">Asiento:</label>
+                            <div className="col-sm-8">
+                                <input type="text" className="form-control" id="userAsiento" disabled />
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <label className="control-label col-sm-2" for="">DNI:</label>
+                            <div className="col-sm-8">
+                                <input type="number" className="form-control" id="userDNI" disabled />
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <label className="control-label col-sm-2" for="">Nombre:</label>
+                            <div className="col-sm-8">
+                                <input type="text" className="form-control" id="userNombre" disabled />
+                            </div>
+                        </div>  
+                        <div className="form-group">
+                            <label className="control-label col-sm-2" for="">Apellido:</label>
+                            <div className="col-sm-8">
+                                <input type="text" className="form-control" id="userApellido" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
                 <div>
                     <h1 className="text4">Lista de Pasajeros Registrados</h1>
                     <ul>
