@@ -16,6 +16,29 @@ const App = ({arr}) =>{
                     </div>
                 </div>
             </section>
+            <section id="menu">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <h1 className="text3">Menú Principal</h1>
+                        </div>
+                    </div>
+                    <div className="row text-center">
+                        <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <p><a className="btn btn-primary" href="#" role="button" id="opReservar"><i className="fa fa-list-alt" aria-hidden="true"></i> RESERVAR</a></p>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <p><a className="btn btn-primary" href="#" role="button" id="opLiberar"><i className="fa fa-window-close-o" aria-hidden="true"></i> LIBERAR</a></p>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <p><a className="btn btn-primary" href="#" role="button" id="opBuscar"><i className="fa fa-search"></i> BUSCAR</a></p>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <p><a className="btn btn-primary" href="#" role="button" id="opListar"><i className="fa fa-bars" aria-hidden="true"></i> LISTAR</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                         <h1 className="text3">Asientos</h1>
             </div>
