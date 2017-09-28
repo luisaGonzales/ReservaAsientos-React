@@ -40,7 +40,7 @@ const App = ({arr}) =>{
                     </div>
                 </div>
             </section>
-            <section id="reservarAsiento" className="no-display">
+            <section id="reservarAsiento">
                 <div className="container">
                     <div className="row" id="tituloReservar">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -90,6 +90,17 @@ const App = ({arr}) =>{
                             <label className="control-label col-sm-2" for="">Apellido:</label>
                             <div className="col-sm-8">
                                 <input type="text" className="form-control" id="userApellido" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row text-center">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p><a className="btn btn-primary pull-right" role="button" id="btnReservar"><i className="fa fa-list-alt" aria-hidden="true"></i> Reservar</a></p>
+                                <p><a className="btn btn-primary pull-right no-display" role="button" id="btnCancelar"><i className="fa fa-window-close-o" aria-hidden="true"></i> Liberar</a></p>
+                            </div>
+                            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <p><a className="btn btn-primary pull-left" role="button" id="btnVolver"><i className="fa fa-hand-o-up" aria-hidden="true"></i> Menú Principal</a></p>
                             </div>
                         </div>
                     </div>
