@@ -201,6 +201,7 @@ function mostrar (noarr){
     return noarr.map((usuario, index)=>{
         return(
         <li className="lista" key={index}>
+            <div className="text-center"> <i className="text-center fa fa-user-circle-o fa-3x" aria-hidden="true"></i> </div>
             <p><strong>Asiento :</strong><em>  {usuario.asiento}</em></p>
             <p className="text-capitalize"><strong>Nombre :</strong><em> {usuario.nombre}</em></p>
             <p className="text-capitalize"><strong>Apellido :</strong><em>  {usuario.apellido}</em></p>
