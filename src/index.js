@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 const App = ({arr}) =>{
     return (
         <div>
-            <h1>PRUEBA</h1>
+            <h1>Lista de Pasajeros Registrados</h1>
             <ul>
                 {mostrar(arr)}
             </ul>
@@ -15,19 +15,38 @@ const App = ({arr}) =>{
     );
 }
 
-let arr = [
+let pasajeros = [
     {
-        nombre: "lale",
-        apellido:"la del barrio",
-        dni:"0",
-        asiento: "12"
+        nombre: "Beth",
+        apellido:"Gonzales",
+        dni:"70459572",
+        asiento: "2"
     },
     {
-        nombre: "lale2",
-        apellido:"la del barrio2",
-        dni:"02",
-        asiento: "122"
-    }
+        nombre: "Luis",
+        apellido:"Medina",
+        dni:"29290156",
+        asiento: "3"
+    },
+    {
+        nombre: "Victoria",
+        apellido:"Cáceres",
+        dni:"29336926",
+        asiento: "6"
+    },
+    {
+        nombre: "Jefferson",
+        apellido:"Casapía",
+        dni:"70802345",
+        asiento: "8"
+    },
+    {
+        nombre: "Miguel",
+        apellido:"Villena",
+        dni:"29807632",
+        asiento: "9"
+    },
+
 ];
 
 function mostrar (noarr){
@@ -43,6 +62,6 @@ function mostrar (noarr){
 }
 
 ReactDOM.render(<App
-    arr = {arr}
+    arr = {pasajeros}
  />, document.getElementById('root'));
 registerServiceWorker();
