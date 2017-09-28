@@ -123,10 +123,10 @@ const App = ({arr}) =>{
                         <div className="row text-center">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <p><a className="btn btn-primary pull-right" href="#" role="button" id="btnBuscarDNI"><i className="fa fa-search"></i> Buscar</a></p>
+                                    <p><a className="btn btn-primary pull-right" role="button" id="btnBuscarDNI"><i className="fa fa-search"></i> Buscar</a></p>
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <p><a className="btn btn-primary pull-left" href="#" role="button" id="btnVolverBuscar"><i className="fa fa-hand-o-up" aria-hidden="true"></i> Menú Principal</a></p>
+                                    <p><a className="btn btn-primary pull-left" role="button" id="btnVolverBuscar"><i className="fa fa-hand-o-up" aria-hidden="true"></i> Menú Principal</a></p>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@ const App = ({arr}) =>{
                     </div>
                 </div>
             </section>
-            <section id="imprimirLista" className="no-display">
+            <section id="imprimirLista">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -148,21 +148,17 @@ const App = ({arr}) =>{
                     </div>
                     <div className="row text-center">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                            <p><a className="btn btn-primary" href="#" role="button" id="btnVolverListar"><i className="fa fa-hand-o-up" aria-hidden="true"></i> Menú Principal</a></p>
+                            <p><a className="btn btn-primary" role="button" id="btnVolverListar"><i className="fa fa-hand-o-up" aria-hidden="true"></i> Menú Principal</a></p>
                         </div>
                     </div>
-                    <div id="listado">
-
+                    <div>
+                        <h1 className="text4">Lista de Pasajeros Registrados</h1>
+                        <ul>
+                            {mostrar(arr)}
+                        </ul>
                     </div>
-
                 </div>
-            </section>
-                <div>
-                    <h1 className="text4">Lista de Pasajeros Registrados</h1>
-                    <ul>
-                        {mostrar(arr)}
-                    </ul>
-                </div>
+            </section> 
         </div>
     );
 }
